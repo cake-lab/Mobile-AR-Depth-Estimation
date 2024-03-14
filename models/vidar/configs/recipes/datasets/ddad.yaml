@@ -1,0 +1,29 @@
+###############################################
+val_front:
+    name: [Ourawboros]
+    path: [/data/datasets/DDAD/ddad.json]
+    split: [val]
+    context: []
+    cameras: [[1]]
+    labels: [depth]
+    depth_type: [lidar]
+    prefix: [CAMERA]
+    augmentation:
+        resize: [384,640]
+    dataloader:
+        batch_size: 8
+###############################################
+val_6cams:
+    name: [Ourawboros]
+    path: [/data/datasets/DDAD/ddad.json]
+    split: [val]
+    context: []
+    cameras: [[1],[5],[6],[7],[8],[9]]
+    labels: [depth]
+    depth_type: [lidar]
+    prefix: [CAMERA]
+    augmentation:
+        resize: [384,640]
+    dataloader:
+        batch_size: 8
+###############################################

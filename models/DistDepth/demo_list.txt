@@ -1,0 +1,4 @@
+data/arkitscenes/41069021_305.244.png
+data/arkitscenes/41069021_307.343.png
+data/arkitscenes/41069021_309.742.png
+data/arkitscenes/41069021_311.941.png

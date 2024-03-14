@@ -1,0 +1,14 @@
+###############################################
+val_velodyne_MR:
+    name: [KITTI]
+    path: [/data/datasets/KITTI_raw]
+    split: [data_splits/eigen_test_files.txt]
+    context: []
+    cameras: [[0]]
+    labels: [depth,intrinsics]
+    depth_type: [velodyne]
+    augmentation:
+        resize: [192,640]
+    dataloader:
+        batch_size: 1
+###############################################

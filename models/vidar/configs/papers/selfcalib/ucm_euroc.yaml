@@ -1,0 +1,40 @@
+wrapper:
+    recipe: wrapper|default_flip
+    validate_first: False
+arch:
+    model:
+        file: depth/SelfSupervisedModel
+        use_gt_intrinsics: False
+    networks:
+        depth:
+            recipe: networks/mono_depth_net|resnet18
+            depth_range: [0.1,80.0]
+        pose:
+            recipe: networks/pose_net|resnet18
+        intrinsics:
+            file: intrinsics/IntrinsicsNet
+            camera_model: 'ucm'
+            shape: [256, 384]
+    losses:
+        reprojection:
+            recipe: losses/depth|self_supervised
+        smoothness:
+            recipe: losses/depth|smoothness
+evaluation:
+    depth:
+        recipe: evaluation/depth|kitti_resize
+optimizers:
+    depth:
+        recipe: optimizers|adam_20_05_step
+        lr: 0.0002
+    pose:
+        recipe: optimizers|adam_20_05_step
+        lr: 0.0002
+    intrinsics:
+        recipe: optimizers|adam_20_05_step
+        lr: 0.01
+datasets:
+    train:
+        recipe: datasets/euroc|train_selfsup
+    validation:
+        recipe: datasets/euroc|validation

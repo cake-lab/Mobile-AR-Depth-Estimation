@@ -1,0 +1,42 @@
+###############################################
+train_self_supervised_MR:
+    name: [KITTI]
+    path: [/data/datasets/KITTI_tiny]
+    split: [kitti_tiny.txt]
+    context: [-1,1]
+    cameras: [[0]]
+    labels: [intrinsics]
+    labels_context: [intrinsics]
+    augmentation:
+        resize: [192,640]
+    dataloader:
+        batch_size: 8
+    repeat: [1000]
+###############################################
+train_supervised_MR:
+    name: [KITTI]
+    path: [/data/datasets/KITTI_tiny]
+    split: [kitti_tiny.txt]
+    context: []
+    cameras: [[0]]
+    labels: [depth,intrinsics]
+    depth_type: [velodyne]
+    augmentation:
+        resize: [192,640]
+    dataloader:
+        batch_size: 8
+    repeat: [1000]
+###############################################
+val_velodyne_MR:
+    name: [KITTI]
+    path: [/data/datasets/KITTI_tiny]
+    split: [kitti_tiny.txt]
+    context: []
+    cameras: [[0]]
+    labels: [depth,intrinsics]
+    depth_type: [velodyne]
+    augmentation:
+        resize: [192,640]
+    dataloader:
+        batch_size: 1
+###############################################

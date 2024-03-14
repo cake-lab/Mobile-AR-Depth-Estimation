@@ -1,0 +1,127 @@
+#####################
+KITTI:
+    name: [KITTI]
+    path: [/data/datasets/tiny/KITTI_tiny]
+    split: [kitti_tiny.txt]
+    context: [-2,2]
+    cameras: [[0,1]]
+    labels: [intrinsics,depth,pose]
+    labels_context: [intrinsics,depth,pose]
+    depth_type: [velodyne]
+####################
+VKITTI2:
+    name: [VKITTI2]
+    path: [/data/datasets/tiny/VKITTI2_tiny]
+    split: [train]
+    context: [-2,2]
+    cameras: [[0,1]]
+    labels: [intrinsics,depth,pose,optical_flow]
+    labels_context: [intrinsics,depth,pose,optical_flow]
+####################
+DDAD:
+    name: [Ourawboros]
+    path: [/data/datasets/tiny/DDAD_tiny/ddad_tiny.json]
+    split: [train]
+    resolution: [[384,640]]
+    context: [-2,2]
+    cameras: [[1,5,6,7,8,9]]
+    labels: [intrinsics,depth,pose]
+    labels_context: [intrinsics,depth,pose]
+    depth_type: [lidar]
+    prefix: [CAMERA]
+####################
+PDv1:
+    name: [Ourawboros]
+    path: [/data/datasets/tiny/PDv1_tiny/pdv1_tiny.json]
+    split: [train]
+    resolution: [[384,640]]
+    context: [-2,2]
+    cameras: [[1,5,6,7,8,9]]
+    labels: [intrinsics,depth,pose]
+    labels_context: [intrinsics,depth,pose]
+    depth_type: [zbuffer]
+    prefix: [camera]
+####################
+PDv2:
+    name: [Ourawboros]
+    path: [/data/datasets/tiny/PDv2_tiny/pdv2_tiny.json]
+    split: [train]
+    resolution: [[384,640]]
+    context: [-2,2]
+    cameras: [[1,5,6,7,8,9]]
+    labels: [intrinsics,depth,pose,optical_flow]
+    labels_context: [intrinsics,depth,pose,optical_flow]
+    depth_type: [zbuffer]
+    prefix: [camera]
+####################
+NuScenes:
+    name: [NuScenes]
+    path: [/data/datasets/tiny/nuScenes_tiny]
+    split: [mini-train]
+    context: [-2,2]
+    cameras: [[0,1,2,3,4,5]]
+    labels: [intrinsics,depth,pose]
+    labels_context: [intrinsics,depth,pose]
+    keyframe_only: [True]
+    depth_type: [lidar]
+####################
+TartanAir:
+    name: [TartanAir]
+    path: [/data/datasets/tiny/TartanAir_tiny]
+    split: [train]
+    context: [-2,2]
+    cameras: [[0,1]]
+    labels: [intrinsics,depth,pose]
+    labels_context: [intrinsics,depth,pose]
+    stride: [1]
+####################
+Waymo:
+    name: [Waymo]
+    path: [/data/datasets/tiny/Waymo_tiny]
+    split: [tiny]
+    context: []
+    cameras: [[0,1,2,3,4]]
+    labels: [intrinsics,depth,pose]
+    labels_context: [intrinsics,depth,pose]
+####################
+Omnidata_taskonomy:
+    name: [OmniData]
+    path: [/data/datasets/tiny/Omnidata_tiny]
+    split: [taskonomy]
+    context: [-1,1]
+    cameras: [[0]]
+    labels: [intrinsics,depth,pose]
+    labels_context: [intrinsics,depth,pose]
+    filter_invalid: [False]
+####################
+Omnidata_hm3d:
+    name: [OmniData]
+    path: [/data/datasets/tiny/Omnidata_tiny]
+    split: [hm3d]
+    context: [-1,1]
+    cameras: [[0]]
+    labels: [intrinsics,depth,pose]
+    labels_context: [intrinsics,depth,pose]
+    filter_invalid: [False]
+####################
+Omnidata_replica:
+    name: [OmniData]
+    path: [/data/datasets/tiny/Omnidata_tiny]
+    split: [replica]
+    context: [-1,1]
+    cameras: [[0]]
+    labels: [intrinsics,depth,pose]
+    labels_context: [intrinsics,depth,pose]
+    filter_invalid: [False]
+####################
+Omnidata_replica_gso:
+    name: [OmniData]
+    path: [/data/datasets/tiny/Omnidata_tiny]
+    split: [replica_gso]
+    context: [-1,1]
+    cameras: [[0]]
+    labels: [intrinsics,depth,pose]
+    labels_context: [intrinsics,depth,pose]
+    filter_invalid: [False]
+####################
+

@@ -1,0 +1,9 @@
+ckpt*
+weights*
+*.pyc
+.idea
+*ZZZ*
+sandbox
+__pycache__
+wandb
+tmp/*

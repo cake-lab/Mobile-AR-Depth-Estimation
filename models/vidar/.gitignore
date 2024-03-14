@@ -1,0 +1,9 @@
+*.pyc
+.idea
+*ZZZ*
+sandbox
+__pycache__
+wandb
+temp
+code
+dataset/*
