@@ -2,6 +2,8 @@
 
 The official repository for Mobile AR Depth Estimation: Challenges &amp; Prospects (HotMobile24)
 
+For all the evaluation results and the ARKitScenes dataset. So for downloading and preporcessing the ARKitScenes dataset, please run the this notebook [ARKitScenes](/Analysis//notebooks/ARKitScenes/download_preprocess.ipynb).
+
 ## ZoeDepth
 
 For more details, please refer to the Zoedepth <a href="https://github.com/isl-org/ZoeDepth">Github repository</a> and <a href="https://arxiv.org/abs/2302.12288">paper</a>.
@@ -22,8 +24,8 @@ To utilize DistDepth, follow the steps outlined below. Detailed instructions and
 
 3. **Running Evaluation:**
    - Place the pre-trained weights in the same directory as the `eval.sh` script.
-   - Update the `eval.sh` script with the path to the ARKit dataset.
-   - Execute the following command to evaluate the DistDepth model on the ARKit dataset:
+   - Update the `eval.sh` script with the path to the ARKitScenes dataset.
+   - Execute the following command to evaluate the DistDepth model on the ARKitScenes dataset:
 
      ```bash
      sh eval.sh
