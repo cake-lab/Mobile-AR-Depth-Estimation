@@ -83,13 +83,3 @@ series = {HOTMOBILE '24}
 ## Acknowledgements
 
 TODO
-
-## License
-
-This project is released under the terms of the GNU General Public License v3.0 (GPL-3.0) License. The GPL-3.0 is a copyleft license, which means that derivative work can only be distributed under the same license terms. This is in the spirit of sharing and contributing to the open-source community.
-
-The GPL-3.0 license allows you to freely use, modify, and distribute this software, but it requires that any modifications and your derivative works are also bound by the same GPL-3.0 license.
-
-For more detailed information, please refer to the full license text here: [GNU General Public License, version 3 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0.en.html).
-
-For a concise summary and FAQ about this license, you can visit [GNU Operating System](https://www.gnu.org/licenses/gpl-3.0.html).
