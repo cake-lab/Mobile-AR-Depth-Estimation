@@ -2,7 +2,25 @@
 
 The official repository for Mobile AR Depth Estimation: Challenges &amp; Prospects (HotMobile24)
 
-For all the evaluation results and the ARKitScenes dataset. So for downloading and preporcessing the ARKitScenes dataset, please run the this notebook [ARKitScenes](/Analysis//notebooks/ARKitScenes/download_preprocess.ipynb).
+## ARKitScenes Dataset
+
+For all evaluations, we utilized the ARKitScenes dataset.
+
+## Download and preprocess
+
+To download and preprocess the ARKitScenes dataset, please use the following notebook: [ARKitScenes Notebook](/Analysis/notebooks/ARKitScenes/download_preprocess.ipynb). This notebook provides step-by-step instructions for obtaining and preparing the dataset for use with the models.
+
+### Additional Analysis Notebooks
+
+Alongside the preprocessing notebook, we have developed several other notebooks aimed at analyzing the dataset in depth. These notebooks explore various aspects of the data, helping to better understand its characteristics and how it impacts the performance of our depth estimation models.
+
+The additional notebooks, found within the same directory, cover topics such as:
+
+- `analysis_per_obj.ipynb`: Examines the performance of models across different object types, identifying any meaningful differences.
+- `confidence_eval.ipynb`: Analyzes missing points in the depth map based on confidence levels, including a visualization of the distribution and frame-by-frame analysis.
+- `main.ipynb`: Contains comprehensive analysis for the number of missing points in both ARKit and ground truth (GT) depths, offering code for analysis based on different thresholds and visualizing missing points in the depth map.
+
+To access these analysis notebooks, navigate to the following directory in our repository: `/Analysis/notebooks/ARKitScenes`.
 
 ## ZoeDepth
 
