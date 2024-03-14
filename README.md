@@ -4,11 +4,13 @@ The official repository for Mobile AR Depth Estimation: Challenges &amp; Prospec
 
 ## ZoeDepth
 
+For more details, please refer to the Zoedepth <a href="https://github.com/isl-org/ZoeDepth">Github repository</a> and <a href="https://arxiv.org/abs/2302.12288">paper</a>.
+
 TODO
 
-## DistDepth
+## DistDepth (Toward Practical Monocular Indoor Depth Estimation)
 
-
+For more details, please refer to the DistDepth's <a href="https://github.com/facebookresearch/DistDepth">Github repository</a> and <a href="https://arxiv.org/abs/2112.02306">paper</a>.
 
 ### Getting Started with DistDepth
 
@@ -30,6 +32,8 @@ To utilize DistDepth, follow the steps outlined below. Detailed instructions and
    - The script outputs the evaluation results and save them in .csv file which can be later be used for visualization.
 
 ## ZeroDepth (ViDepth)
+
+For more details, please refer to the vidar's <a href="https://github.com/TRI-ML/vidar">Github repository</a> and <a href="https://arxiv.org/abs/2306.17253">paper</a>.
 
 TODO
 
@@ -69,4 +73,3 @@ The GPL-3.0 license allows you to freely use, modify, and distribute this softwa
 For more detailed information, please refer to the full license text here: [GNU General Public License, version 3 (GPL-3.0)](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 For a concise summary and FAQ about this license, you can visit [GNU Operating System](https://www.gnu.org/licenses/gpl-3.0.html).
-
