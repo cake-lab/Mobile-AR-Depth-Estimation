@@ -8,7 +8,7 @@ TODO
 
 ## DistDepth
 
-DistDepth offers an innovative approach to depth estimation tailored for mobile AR environments. Our method emphasizes efficient inference and robustness across diverse scenarios.
+
 
 ### Getting Started with DistDepth
 
