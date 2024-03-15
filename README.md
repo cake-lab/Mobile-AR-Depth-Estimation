@@ -11,6 +11,7 @@ The official repository for our HotMobile24 paper:
 [[Arxiv(Extended verison)]](https://arxiv.org/pdf/2310.14437.pdf)
 
 For any questions or concerns, please feel free to reach out to us at [Ashkan Ganj](mailto:aganj@wpi.edu)
+
 ## ARKitScenes Dataset
 
 For all evaluations, we utilized the ARKitScenes dataset.
@@ -62,9 +63,25 @@ To utilize DistDepth, follow the steps outlined below. Detailed instructions and
 
 ## ZeroDepth (ViDepth)
 
-For more details, please refer to the vidar's <a href="https://github.com/TRI-ML/vidar">Github repository</a> and <a href="https://arxiv.org/abs/2306.17253">paper</a>.
+ZeroDepth, also referred to as ViDepth in some contexts, represents an advanced approach in our suite of depth estimation solutions. For a comprehensive understanding of the underlying methodology and insights into the model's development, we direct readers to the official resources:
 
-TODO
+- For detailed information and the latest updates on ViDepth, visit [Vidar's GitHub repository](https://github.com/TRI-ML/vidar).
+- To dive deeper into the research and technical details, the [ViDepth paper](https://arxiv.org/abs/2306.17253) provides a thorough explanation of the technology and its applications.
+
+### Getting Started with ZeroDepth
+
+To begin working with ZeroDepth, you should first set up your environment and acquire the necessary pre-trained weights by following the instructions in the [ZeroDepth Readme.md](https://github.com/cake-lab/Mobile-AR-Depth-Estimation/blob/main/models/vidar/README.md).
+
+#### Evaluation Steps
+
+1. Navigate to the `Analysis/notebooks/vidar/vidar-inference.ipynb` notebook within our repository.
+2. Update the dataset path variables:
+   - **ARKitScenes Dataset Path:** Ensure the path points to where you've stored the ARKitScenes dataset.
+   - **NyuV2 Dataset Path:** Similarly, update this to the location of your NyuV2 dataset.
+3. Execute the notebook, following the provided instructions to initiate the evaluation of the ZeroDepth model on the ARKitScenes dataset.
+4. Upon completion, the notebook will present the evaluation results and automatically save them to a `.csv` file. This file can be utilized for further analysis or visualization purposes.
+
+These steps are designed to facilitate a smooth experience in assessing the performance of ZeroDepth with the ARKitScenes dataset, enabling users to effectively leverage this model in their depth estimation projects.
 
 ## Citation
 
