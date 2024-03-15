@@ -87,7 +87,7 @@ class DepthModel(nn.Module):
             x = F.pad(x, padding, mode=padding_mode, **kwargs)
         out = self._infer(x)
         if out.shape[-2:] != x.shape[-2:]:
-            out = F.interpolate(out, size=(x.shape[2], x.shape[3]), mode=upsampling_mode, align_corners=False)
+            out = F.interpolate(out, size=(int(x.shape[2]), int(x.shape[3])), mode=upsampling_mode, align_corners=False)
         if pad_input:
             # crop to the original size, handling the case where pad_h and pad_w is 0
             if pad_h > 0:

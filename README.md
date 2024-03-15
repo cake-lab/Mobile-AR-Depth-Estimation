@@ -16,6 +16,28 @@ For any questions or concerns, please feel free to reach out to [Ashkan Ganj](ma
 
 This repository is structured into two main directories, `Analysis` and `Models`, each serving a distinct purpose in the context of our research.
 
+```plaintext
+├── Analysis/
+│   ├── notebooks/
+│   │   ├── ARKitScenes/
+│   │   ├── vidar/
+│   │   └── ZoeDepth/
+│   └── results/
+│       ├── ARkitScenes/
+│       ├── DistDepth/
+│       ├── ZeroDepth(Vidar)/
+│       └── ZoeDepth/
+├── models/
+│   ├── DistDepth/
+│   │   ├── ...
+│   ├── vidar/
+│   │   ├── ...
+│   └── ZoeDepth/
+│       ├── ...
+├── LICENSE
+└── README.md
+```
+
 ### Analysis Directory
 
 The `Analysis` directory is the central hub for all codes, results (including CSV files, figures, and images), and analytical notebooks associated with our paper. By running the notebooks located within this directory for each model, users can replicate our analytical process and generate all the outputs—ranging from CSV data files to the exact figures published in our paper. This directory aims to provide a transparent and replicable pathway for understanding our research findings and methodology.

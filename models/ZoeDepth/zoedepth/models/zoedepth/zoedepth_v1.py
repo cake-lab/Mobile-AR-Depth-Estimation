@@ -200,7 +200,7 @@ class ZoeDepth(DepthModel):
 
         if return_probs:
             output['probs'] = x
-
+        print('output:', output.shape)
         return output
 
     def get_lr_params(self, lr):
