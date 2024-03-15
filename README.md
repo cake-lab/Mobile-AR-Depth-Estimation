@@ -1,6 +1,13 @@
 # Mobile-AR-Depth-Estimation
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 
-The official repository for Mobile AR Depth Estimation: Challenges &amp; Prospects (HotMobile24)
+The official repository for our HotMobile24 paper:
+
+>#### [Mobile AR Depth Estimation: Challenges &amp; Prospects](https://dl.acm.org/doi/10.1145/3638550.3641122)
+>
+> ##### [Ashkan Ganj](https://ashkanganj.me/), [Yiqin Zhao](https://yiqinzhao.me/), [Hang Su](https://suhangpro.github.io/), [Tian Guo](https://tianguo.info/)
+
+[[Arxiv(Extended verison)]](https://arxiv.org/pdf/2310.14437.pdf)
 
 ## ARKitScenes Dataset
 
@@ -83,6 +90,10 @@ series = {HOTMOBILE '24}
 ## Acknowledgements
 
 TODO
+
+## Contact
+
+Please feel free to reach out to us with any questions or concerns. You can contact us via email at [Ashkan Ganj](mailto:aganj@wpi.edu)
 
 ## License
 
