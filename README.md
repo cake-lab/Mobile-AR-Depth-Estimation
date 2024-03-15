@@ -36,7 +36,7 @@ To access these analysis notebooks, navigate to the following directory in our r
 
 For more details, please refer to the Zoedepth <a href="https://github.com/isl-org/ZoeDepth">Github repository</a> and <a href="https://arxiv.org/abs/2302.12288">paper</a>.
 
-TODO
+TODO: I am cleaning up the code and will add the evaluation steps here.
 
 ## DistDepth (Toward Practical Monocular Indoor Depth Estimation)
 
