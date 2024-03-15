@@ -63,7 +63,7 @@ To utilize DistDepth, follow the steps outlined below. Detailed instructions and
 
 ## ZeroDepth (ViDepth)
 
-ZeroDepth, also referred to as ViDepth in some contexts, represents an advanced approach in our suite of depth estimation solutions. For a comprehensive understanding of the underlying methodology and insights into the model's development, we direct readers to the official resources:
+ZeroDepth, represents an advanced approach in our suite of depth estimation solutions. For a comprehensive understanding of the underlying methodology and insights into the model's development, we direct readers to the official resources:
 
 - For detailed information and the latest updates on ViDepth, visit [Vidar's GitHub repository](https://github.com/TRI-ML/vidar).
 - To dive deeper into the research and technical details, the [ViDepth paper](https://arxiv.org/abs/2306.17253) provides a thorough explanation of the technology and its applications.
