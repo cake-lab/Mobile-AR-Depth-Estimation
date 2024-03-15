@@ -2,7 +2,7 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) [![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/) [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://pytorch.org/)
 
-The official repository for our HotMobile24 paper:
+Welcome to the official repository for our HotMobile24 paper:
 
 >#### [Mobile AR Depth Estimation: Challenges &amp; Prospects](https://dl.acm.org/doi/10.1145/3638550.3641122)
 >
@@ -11,6 +11,18 @@ The official repository for our HotMobile24 paper:
 [[Arxiv(Extended verison)]](https://arxiv.org/pdf/2310.14437.pdf)
 
 For any questions or concerns, please feel free to reach out to [Ashkan Ganj](mailto:aganj@wpi.edu)
+
+## Repository Structure
+
+This repository is structured into two main directories, `Analysis` and `Models`, each serving a distinct purpose in the context of our research.
+
+### Analysis Directory
+
+The `Analysis` directory is the central hub for all codes, results (including CSV files, figures, and images), and analytical notebooks associated with our paper. By running the notebooks located within this directory for each model, users can replicate our analytical process and generate all the outputs—ranging from CSV data files to the exact figures published in our paper. This directory aims to provide a transparent and replicable pathway for understanding our research findings and methodology.
+
+### Models Directory
+
+In the `Models` directory, you'll find modified versions of various depth estimation models, specifically adapted to work with the ARKitScenes dataset. Each model within this directory comes with its own `README.md`, containing detailed instructions on setup, usage, and evaluation. This ensures that users can easily navigate and utilize the modified models for their depth estimation projects.
 
 ## ARKitScenes Dataset
 
