@@ -10,7 +10,7 @@ The official repository for our HotMobile24 paper:
 
 [[Arxiv(Extended verison)]](https://arxiv.org/pdf/2310.14437.pdf)
 
-For any questions or concerns, please feel free to reach out to us at [Ashkan Ganj](mailto:aganj@wpi.edu)
+For any questions or concerns, please feel free to reach out to [Ashkan Ganj](mailto:aganj@wpi.edu)
 
 ## ARKitScenes Dataset
 
