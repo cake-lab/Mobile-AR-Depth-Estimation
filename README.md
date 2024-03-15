@@ -10,6 +10,7 @@ The official repository for our HotMobile24 paper:
 
 [[Arxiv(Extended verison)]](https://arxiv.org/pdf/2310.14437.pdf)
 
+For any questions or concerns, please feel free to reach out to us at [Ashkan Ganj](mailto:aganj@wpi.edu)
 ## ARKitScenes Dataset
 
 For all evaluations, we utilized the ARKitScenes dataset.
@@ -91,4 +92,3 @@ series = {HOTMOBILE '24}
 ## Acknowledgements
 
 This work was supported in part by NSF Grants #2105564 and #2236987, a VMware grant, the Worcester Polytechnic Institute’s Computer Science Department. Most results presented in this work were obtained using <a href="https://www.cloudbank.org/">CloudBank</a>, which is supported by the National Science Foundation under award #1925001.
-
