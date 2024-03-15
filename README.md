@@ -68,9 +68,47 @@ To access these analysis notebooks, navigate to the following directory in our r
 
 ## ZoeDepth
 
-For more details, please refer to the Zoedepth <a href="https://github.com/isl-org/ZoeDepth">Github repository</a> and <a href="https://arxiv.org/abs/2302.12288">paper</a>.
+For comprehensive details about ZoeDepth, including its methodologies and achievements, we encourage you to visit the [ZoeDepth GitHub repository](https://github.com/isl-org/ZoeDepth) and consult the [ZoeDepth paper](https://arxiv.org/abs/2302.12288).
 
-TODO: I am cleaning up the code and will add the evaluation steps here.
+### Important Note
+
+It's crucial to note that ZoeDepth's implementation might encounter compatibility issues with newer versions of PyTorch. To ensure optimal functionality, we strongly recommend using the exact version of PyTorch specified in the ZoeDepth repository instructions (any version <= 2.1.0 is acceptable).
+
+### Getting Started with ZoeDepth
+
+To begin working with ZoeDepth, please adhere to the instructions provided in the [ZoeDepth repository](https://github.com/isl-org/ZoeDepth). These steps will guide you through cloning the repository, setting up the required environment, and downloading the necessary pre-trained weights.
+
+### Evaluation Steps on ARKitScenes
+
+To evaluate ZoeDepth on the ARKitScenes dataset:
+
+1. Open the `Analysis/notebooks/ZoeDepth/evaluateOnARkitScenes.ipynb` notebook found within our repository.
+2. Ensure the dataset path is correctly set to where your ARKitScenes dataset is stored.
+3. Adjust the notebook to point to the pre-trained weights, located in the `models/ZoeDepth/` directory. For ARKitScenes, use the specific pre-trained weights provided ([midas_train](https://drive.google.com/file/d/1k6kLfmNWyfGA19x6ae1rIbSUcuYROs4A/view?usp=drive_link), [midas_freeze](https://drive.google.com/file/d/1sZ3jOnp56ExuW8cusuiT6qFzxRDRpTc9/view?usp=sharing)).
+4. Execute the notebook to start the evaluation process.
+5. After the evaluation, results will be summarized and saved in a `.csv` file, ready for any further analysis or visualization.
+
+#### Evaluation Steps on NYUv2 (Cropping Effect)
+
+To assess the impact of cropping on model performance using the NYUv2 dataset:
+
+1. Go to the `Analysis/notebooks/ZoeDepth/cropped_effect.ipynb` notebook within our repository.
+2. Update the dataset path variable to direct to your NYUv2 dataset location.
+3. Run the notebook to perform the evaluation.
+4. The notebook will present a series of average depth errors associated with different cropping percentages, offering insights into the cropping effect on depth estimation accuracy.
+
+### Train ZoeDepth on ARKitScenes
+
+- `models/ZoeDepth/zoedepth/utils/config.py`: This file contains general configuration for dataset. Please update the file according to your requirements before initiating the training process(dataset path, splits path).
+- `models/ZoeDepth/train_mono.py`: This script is the entry point for initiating the training process. It reads from `config.py` and applies the specified configurations during training. Depending on your requirements, you might want to modify this script to alter the training workflow, add custom logging, or implement additional features.
+
+#### Initiating Training
+
+Once you have made the necessary adjustments to the configuration files, you can start the training process by running the following command from your terminal:
+
+```bash
+python train_mono.py
+```
 
 ## DistDepth (Toward Practical Monocular Indoor Depth Estimation)
 

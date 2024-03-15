@@ -86,6 +86,7 @@ class DepthModel(nn.Module):
             
             x = F.pad(x, padding, mode=padding_mode, **kwargs)
         out = self._infer(x)
+        
         if out.shape[-2:] != x.shape[-2:]:
             out = F.interpolate(out, size=(int(x.shape[2]), int(x.shape[3])), mode=upsampling_mode, align_corners=False)
         if pad_input:
@@ -94,6 +95,7 @@ class DepthModel(nn.Module):
                 out = out[:, :, pad_h:-pad_h,:]
             if pad_w > 0:
                 out = out[:, :, :, pad_w:-pad_w]
+
         return out
     
     def infer_with_flip_aug(self, x, pad_input: bool=True, **kwargs) -> torch.Tensor:

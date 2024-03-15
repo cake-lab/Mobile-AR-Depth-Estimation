@@ -137,6 +137,7 @@ class ZoeDepth(DepthModel):
                 - probs (torch.Tensor): Output probability distribution of shape (B, n_bins, H, W). Present only if return_probs is True
 
         """
+        
         b, c, h, w = x.shape
         # got relative depth from midas
         self.orig_input_width = w
@@ -200,7 +201,6 @@ class ZoeDepth(DepthModel):
 
         if return_probs:
             output['probs'] = x
-        print('output:', output.shape)
         return output
 
     def get_lr_params(self, lr):
@@ -241,6 +241,7 @@ class ZoeDepth(DepthModel):
     def build(midas_model_type="DPT_BEiT_L_384", pretrained_resource=None, use_pretrained_midas=False, train_midas=False, freeze_midas_bn=True, **kwargs):
         core = MidasCore.build(midas_model_type=midas_model_type, use_pretrained_midas=use_pretrained_midas,
                                train_midas=train_midas, fetch_features=True, freeze_bn=freeze_midas_bn, **kwargs)
+        
         model = ZoeDepth(core, **kwargs)
         if pretrained_resource:
             assert isinstance(pretrained_resource, str), "pretrained_resource must be a string"

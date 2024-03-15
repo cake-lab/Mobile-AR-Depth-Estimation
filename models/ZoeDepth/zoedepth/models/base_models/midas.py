@@ -170,9 +170,8 @@ class Resize(object):
 
     def __call__(self, x):
         width, height = self.get_size(*x.shape[-2:][::-1])
-        height = int(height)
-        width = int(width)
-        return nn.functional.interpolate(x, (height, width), mode='bilinear', align_corners=True)
+        return nn.functional.interpolate(x, (int(height), int(width)), mode='bilinear', align_corners=True)
+    
 class PrepForMidas(object):
     def __init__(self, resize_mode="minimal", keep_aspect_ratio=True, img_size=384, do_resize=True):
         if isinstance(img_size, int):
@@ -180,7 +179,7 @@ class PrepForMidas(object):
         net_h, net_w = img_size
         self.normalization = Normalize(
             mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
-        self.resizer = Resize(net_w, net_h, keep_aspect_ratio=keep_aspect_ratio, ensure_multiple_of=32, resize_method=resize_mode) \
+        self.resizer = Resize(int(net_w), int(net_h), keep_aspect_ratio=keep_aspect_ratio, ensure_multiple_of=32, resize_method=resize_mode) \
             if do_resize else nn.Identity()
 
     def __call__(self, x):
@@ -261,13 +260,9 @@ class MidasCore(nn.Module):
             if denorm:
                 x = denormalize(x)
             x = self.prep(x)
-            # print("Shape after prep: ", x.shape)
 
         with torch.set_grad_enabled(self.trainable):
-
-            # print("Input size to Midascore", x.shape)
             rel_depth = self.core(x)
-            # print("Output from midas shape", rel_depth.shape)
             if not self.fetch_features:
                 return rel_depth
         out = [self.core_out[k] for k in self.layer_names]
