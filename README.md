@@ -1,16 +1,21 @@
-# Mobile-AR-Depth-Estimation
+<div align="center">
+ <h1>Mobile-AR-Depth-Estimation</h1>
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/) [![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/) [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://pytorch.org/)
+[**Ashkan Ganj**](https://ashkanganj.me/)<sup>1</sup> · [**Yiqin Zhao**](https://yiqinzhao.me/)<sup>1</sup> . [**Hang Su**](https://suhangpro.github.io/)<sup>2</sup> · [**Tian Guo**](https://tianguo.info/)<sup>1</sup>
 
-Welcome to the official repository for our HotMobile24 paper:
+<sup>1</sup>Worcester Polytechnic Institute
+&emsp;&emsp;&emsp;<sup>2</sup>Nvidia Research
 
->#### [Mobile AR Depth Estimation: Challenges &amp; Prospects](https://dl.acm.org/doi/10.1145/3638550.3641122)
->
-> ##### [Ashkan Ganj](https://ashkanganj.me/), [Yiqin Zhao](https://yiqinzhao.me/), [Hang Su](https://suhangpro.github.io/), [Tian Guo](https://tianguo.info/)
-
-[[Arxiv(Extended verison)]](https://arxiv.org/pdf/2310.14437.pdf)
+<a href="https://arxiv.org/pdf/2310.14437.pdf"><img src='https://img.shields.io/badge/arXiv-Extended Version-red' alt='arXiv (Extended Version)'></a>
+<a href='https://dl.acm.org/doi/10.1145/3638550.3641122'><img src='https://img.shields.io/badge/ACM-Proceeding-blue' alt='Proceeding'></a>
+<a href='https://www.gnu.org/licenses/gpl-3.0'><img src='https://img.shields.io/badge/License-GPLv3-green.svg'></a>
 
 For any questions or concerns, please feel free to reach out to [Ashkan Ganj](mailto:aganj@wpi.edu)
+</div>
+
+![teaser](assets/teaser.png)
+Welcome to the official repository for our HotMobile24 paper:
+
 
 ## Repository Structure
 
