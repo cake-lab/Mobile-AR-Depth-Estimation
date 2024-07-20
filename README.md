@@ -11,10 +11,12 @@
 <a href='https://www.gnu.org/licenses/gpl-3.0'><img src='https://img.shields.io/badge/License-GPLv3-green.svg'></a>
 
 For any questions or concerns, please feel free to reach out to [Ashkan Ganj](mailto:aganj@wpi.edu)
+
+![teaser](MobileARWorkFlow.png)
 </div>
 
-![teaser](assets/teaser.png)
-Welcome to the official repository for our HotMobile24 paper:
+Welcome to the official repository for our HotMobile24 paper. This work presents the challenges and opportunities of achieving accurate metric depth estimation in mobile AR. We tested four different state-of-the-art monocular depth estimation models performance in AR scenarios and identified three types of challenges: hardware, data, and model related challenges. Furthermore, our
+research provides promising future directions to explore and solve those challenges.
 
 
 ## Repository Structure
