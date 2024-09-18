@@ -1,5 +1,5 @@
 <div align="center">
- <h1>Mobile-AR-Depth-Estimation</h1>
+ <h1>MobilenmAR Depth Estimation</h1>
 
 [**Ashkan Ganj**](https://ashkanganj.me/)<sup>1</sup> · [**Yiqin Zhao**](https://yiqinzhao.me/)<sup>1</sup> . [**Hang Su**](https://suhangpro.github.io/)<sup>2</sup> · [**Tian Guo**](https://tianguo.info/)<sup>1</sup>
 
@@ -18,6 +18,7 @@ For any questions or concerns, please feel free to reach out to [Ashkan Ganj](ma
 Welcome to the official repository for our HotMobile24 paper. This work presents the challenges and opportunities of achieving accurate metric depth estimation in mobile AR. We tested four different state-of-the-art monocular depth estimation models performance in AR scenarios and identified three types of challenges: hardware, data, and model related challenges. Furthermore, our
 research provides promising future directions to explore and solve those challenges.
 
+<div align="center">📢 <a href="https://github.com/cake-lab/HybridDepth">Check out HybridDepth, which addresses the challenges discussed in this work</a></div>
 
 ## Repository Structure
 
