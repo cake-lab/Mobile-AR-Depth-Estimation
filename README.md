@@ -1,5 +1,5 @@
 <div align="center">
- <h1>MobilenmAR Depth Estimation</h1>
+ <h1>Mobile AR Depth Estimation</h1>
 
 [**Ashkan Ganj**](https://ashkanganj.me/)<sup>1</sup> · [**Yiqin Zhao**](https://yiqinzhao.me/)<sup>1</sup> . [**Hang Su**](https://suhangpro.github.io/)<sup>2</sup> · [**Tian Guo**](https://tianguo.info/)<sup>1</sup>
 
